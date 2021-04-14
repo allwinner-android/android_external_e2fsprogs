@@ -33,6 +33,9 @@ struct blkid_probe {
 typedef int (*blkid_probe_t)(struct blkid_probe *probe,
 			     struct blkid_magic *id, unsigned char *buf);
 
+unsigned char *blkid_probe_get_buffer(struct blkid_probe *pr,
+                      blkid_loff_t off, size_t len);
+
 struct blkid_magic {
 	const char	*bim_type;	/* type name for this magic */
 	long		bim_kboff;	/* kilobyte offset of superblock */

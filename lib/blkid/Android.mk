@@ -13,6 +13,7 @@ libext2_blkid_src_files := \
 	save.c \
 	tag.c \
 	version.c \
+	probe_exfat.c \
 
 
 libext2_blkid_shared_libraries := libext2_uuid
